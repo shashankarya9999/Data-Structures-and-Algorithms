@@ -37,7 +37,7 @@ int main()
     for( int i=0; i<n; ++i )    cin >> numbers[i];
 
     int result = max_pairwise_product(numbers);
-    cout << "The maximum pairwise product = " << result << "\n";
+    cout << "The maximum pairwise product = " << result << endl;
 
     return 0;
 }
