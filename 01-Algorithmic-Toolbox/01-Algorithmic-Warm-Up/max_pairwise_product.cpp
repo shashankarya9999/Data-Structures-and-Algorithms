@@ -34,10 +34,7 @@ int main()
     vector<int> numbers(n);
 
     cout << "Enter the elements: ";
-    for( int i=0; i<n; ++i )
-    {
-        cin >> numbers[i];
-    }
+    for( int i=0; i<n; ++i )    cin >> numbers[i];
 
     int result = max_pairwise_product(numbers);
     cout << "The maximum pairwise product = " << result << "\n";
