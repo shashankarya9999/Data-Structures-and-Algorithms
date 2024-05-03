@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a=0, b=0, sum=0;
+    int a = 0, b = 0, sum = 0;
 
     std::cout << "Enter two numbers: " << std::endl;
     std::cin >> a >> b;
