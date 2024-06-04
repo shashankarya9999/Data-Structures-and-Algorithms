@@ -1,3 +1,4 @@
+#include<cstdlib>
 #include<iostream>
 #include<vector>
 
@@ -47,15 +48,52 @@ long long max_pairwise_product_fast(const vector<int> &numbers)
     int max_index2 = -1;
     for(int j=0; j<n; ++j)
     {
-        if((numbers[j] != numbers[max_index1]) && ((max_index2 == -1) || (numbers[j] > numbers[max_index2])))
+        if((j != max_index1) && ((max_index2 == -1) || (numbers[j] > numbers[max_index2])))
             max_index2 = j;
     }
+
+    cout << max_index1 << ' ' << max_index2 << "\n";
 
     return ((long long)(numbers[max_index1])) * numbers[max_index2];
 }
 
 int main()
 {
+    // stress testing
+    /*
+        while(true)
+        {
+            int n = rand() % 1000 + 2;
+            cout << n << "\n";
+            vector<int> a;
+
+            for(int i=0; i<n; ++i)
+            {
+                a.push_back(rand() % 100000);
+            }
+
+            for(int i=0; i<n; ++i)
+            {
+                cout << a[i] << ' ';
+            }
+
+            cout << "\n";
+            
+            long long res1 = max_pairwise_product(a);
+            long long res2 = max_pairwise_product_fast(a);
+
+            if(res1 != res2)
+            {
+                cout << "Wrong answer: " << res1 << ' ' << res2 << "\n";
+                break;
+            }
+
+            else
+            {
+                cout << "OK\n";
+            }
+        }    
+    */
     int n;
     
     cout << "Enter number of elements in array: ";
@@ -67,7 +105,7 @@ int main()
     for( int i=0; i<n; ++i )    cin >> numbers[i];
 
     long long int result = max_pairwise_product(numbers);
-    long long int result2 = max_pairwise_product_fast(vector<int>(10000,0));
+    long long int result2 = max_pairwise_product_fast(numbers);
     cout << "The maximum pairwise product = " << result << "\n";
     cout << "The maximum pairwise product = " << result2 << "\n";
 
