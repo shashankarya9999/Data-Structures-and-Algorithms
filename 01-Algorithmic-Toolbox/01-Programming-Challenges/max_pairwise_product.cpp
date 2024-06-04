@@ -52,7 +52,7 @@ long long max_pairwise_product_fast(const vector<int> &numbers)
             max_index2 = j;
     }
 
-    cout << max_index1 << ' ' << max_index2 << "\n";
+    // cout << max_index1 << ' ' << max_index2 << "\n";
 
     return ((long long)(numbers[max_index1])) * numbers[max_index2];
 }
