@@ -6,7 +6,7 @@ using std::vector;
 using std::cin;
 using std::cout;
 
-// this solution is quite slow
+// this solution is quite slow(time limit exceeds)
 // our algorithm goes through all possible pairs of input numbers
 // need for better algorithm
 
@@ -96,18 +96,22 @@ int main()
     */
     int n;
     
-    cout << "Enter number of elements in array: ";
+    // cout << "Enter number of elements in array: ";
     cin >> n;
 
     vector<int> numbers(n);
 
-    cout << "Enter the elements: ";
+    //cout << "Enter the elements: ";
     for( int i=0; i<n; ++i )    cin >> numbers[i];
 
     long long int result = max_pairwise_product(numbers);
     long long int result2 = max_pairwise_product_fast(numbers);
-    cout << "The maximum pairwise product = " << result << "\n";
-    cout << "The maximum pairwise product = " << result2 << "\n";
+    
+    // cout << result;     // time limit exceeds for this
+    cout << result2;
+    
+    // cout << "The maximum pairwise product = " << result << "\n";
+    // cout << "The maximum pairwise product = " << result2 << "\n";
 
     return 0;
 }
