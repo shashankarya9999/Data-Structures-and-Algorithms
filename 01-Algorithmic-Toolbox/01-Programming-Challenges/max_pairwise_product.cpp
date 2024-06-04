@@ -67,7 +67,7 @@ int main()
     for( int i=0; i<n; ++i )    cin >> numbers[i];
 
     long long int result = max_pairwise_product(numbers);
-    long long int result2 = max_pairwise_product_fast(numbers);
+    long long int result2 = max_pairwise_product_fast(vector<int>(10000,0));
     cout << "The maximum pairwise product = " << result << "\n";
     cout << "The maximum pairwise product = " << result2 << "\n";
 
