@@ -102,7 +102,7 @@ int main()
 
     vector<int> numbers(n);
 
-    //cout << "Enter the elements: ";
+    // cout << "Enter the elements: ";
     for( int i=0; i<n; ++i )    cin >> numbers[i];
 
     long long int result = max_pairwise_product(numbers);
