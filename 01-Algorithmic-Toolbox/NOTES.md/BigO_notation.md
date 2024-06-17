@@ -21,5 +21,6 @@ $2^{3log_2n}$ = $(2^{log_2n})^3 = n^3$ and $n^3$ grows slower than $n^5$
 7) $2^n = O(2^{n+1})$ : ```True```<br>
 $2^{n+1} = 2.2^n$, o that is, $2^n$ and $2^{n+1}$ have the same growth rate and hence $2^n = \Theta(2^{n+1})$ 
 
-8) **Remember:** $$ log_n < \sqrt{n} < n < nlogn < n^2 < 2^n$$
+8) **Remember:**
+   $$log_n < \sqrt{n} < n < nlogn < n^2 < 2^n$$
 
