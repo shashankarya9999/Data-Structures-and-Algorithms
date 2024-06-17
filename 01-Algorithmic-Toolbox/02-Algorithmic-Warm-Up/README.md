@@ -1,7 +1,5 @@
 ### Overview
 
-In week 2 of the course, 
-
 - First, I designed a naive simple algorithm, using recursion, to compute ```Fibonacci numbers```. But as I analyzed the algorithm, it turned out to be very slow. The reason being the numerous function calls that were being computed for the same number even though it had already been calculated before. So there was a need for a more efficient algorithm. An iterative approach stood out as a better algorithm.
 
 - Second, I implemented a relatively simple naive algorithm to compute GCD of two positive numbers. But it also turned out to be very slow, especially for 20 digit numbers. For a better approach, I was taught about ```Euclidean algorithm```. It proved to be very efficient algorithm.
