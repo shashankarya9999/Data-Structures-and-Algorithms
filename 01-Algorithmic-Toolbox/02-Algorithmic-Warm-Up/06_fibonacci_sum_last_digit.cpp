@@ -43,5 +43,5 @@ int fibonacci_sum_fast(long long n)
 int main() {
     long long n = 0;
     std::cin >> n;
-    std::cout << fibonacci_sum_naive(n);
+    std::cout << fibonacci_sum_fast(n);
 }

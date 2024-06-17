@@ -8,26 +8,36 @@ long long lcm_naive(int a, int b) {
   return (long long) a * b;
 }
 
-long long lcm_fast(int a, int b)
+long long gcd_fast(long long a, long long b)
 {
-  if(b==0)
-    return a;
+  long long x = std::max(a,b);
+  long long y = std::min(a,b);
+  
+  if(y==0)
+    return x;
+  else
+  {
+    long long x_ = x % y;
 
-  long long a_ = a % b;
+    return gcd_fast(y,x_);
+  }
+}
 
+long long lcm_fast(long long a, long long b)
+{
   long long gcd {};
-  gcd = lcm_fast(b,a_);
+  gcd = gcd_fast(a,b);
 
   long long lcm {};
-  lcm = (a * b)/gcd;
+  lcm = (a*b)/gcd;
 
-  return (long long) lcm;
+  return lcm;
 }
 
 int main() {
   int a, b;
   std::cin >> a >> b;
   // std::cout << lcm_naive(a, b) << std::endl;
-  std::cout << lcm_naive(a, b) << std::endl;
+  std::cout << lcm_fast(a, b) << std::endl;
   return 0;
 }
