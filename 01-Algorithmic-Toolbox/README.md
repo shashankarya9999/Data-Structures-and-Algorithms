@@ -7,7 +7,10 @@
 2) Readings: 
 - Computing Fibonacci numbers: Section 0.2 of [DPV08<sup>1</sup>]
 - Properties of Fibonacci numbers: Exercises 0.2-0.4 in [DPV08]
+- [**An elementary introduction to greatest common divisor**](https://www.khanacademy.org/math/pre-algebra/factors-multiples/greatest_common_divisor/v/greatest-common-divisor-factor-exercise) at Khan Academy
 - Greatest common divisor: Section 1.2.3 of [DPV08], Section 31.2 of [CLRS<sup>2</sup>]
+- Big-𝑂 notation and growth rate: Section 0.3 of [DPV08]
+- [**Big-𝑂 notation**](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation) at Khan Academy
 
 <sup>1</sup> [DPV] Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani. Algorithms (1st Edition). McGraw-Hill Higher Education. 2008.
 
