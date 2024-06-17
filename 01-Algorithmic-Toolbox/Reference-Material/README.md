@@ -7,3 +7,5 @@
 3) [**Calculating Pisano periods for any integer**](https://mathoverflow.net/questions/144308/calculating-pisano-periods-for-any-integer)
 
 4) [**Sum of squares of Fibonacci numbers**](https://www.geeksforgeeks.org/sum-of-squares-of-fibonacci-numbers/)
+
+5) [**Last digit of sum of squares of Fibonacci numbers**](https://stackoverflow.com/questions/61726473/last-digit-of-sum-of-squares-of-fibonacci-numbers)
