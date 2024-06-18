@@ -8,8 +8,13 @@ using std::vector;
 using std::string;
 
 string largest_number(vector<string> a) {
-  //write your code here
   std::stringstream ret;
+  
+  std::sort(a.begin(), a.end(), [](const string& a, const string& b) {
+		return (a + b) < (b + a);
+	});
+	std::reverse(a.begin(), a.end());
+
   for (size_t i = 0; i < a.size(); i++) {
     ret << a[i];
   }

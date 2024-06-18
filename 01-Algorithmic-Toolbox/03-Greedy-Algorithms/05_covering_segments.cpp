@@ -9,14 +9,22 @@ struct Segment {
   int start, end;
 };
 
+bool sort_func(Segment i, Segment j) { return (i.end < j.end); }
+
 vector<int> optimal_points(vector<Segment> &segments) {
-  vector<int> points;
-  //write your code here
-  for (size_t i = 0; i < segments.size(); ++i) {
-    points.push_back(segments[i].start);
-    points.push_back(segments[i].end);
-  }
-  return points;
+  std::sort(segments.begin(), segments.end(), sort_func);
+
+    vector<int> points;
+    int point = segments[0].end;
+    points.push_back(point);
+
+    for (size_t i = 1; i < segments.size(); ++i) {
+        if (point < segments[i].start || point > segments[i].end) {
+            point = segments[i].end;
+            points.push_back(point);
+        }
+    }
+    return points;
 }
 
 int main() {

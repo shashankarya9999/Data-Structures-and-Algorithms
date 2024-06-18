@@ -6,9 +6,32 @@ using std::cout;
 using std::vector;
 using std::max;
 
-int compute_min_refills(int dist, int tank, vector<int> & stops) {
-    // write your code here
-    return -1;
+int compute_min_refills(int dist, int tank, vector<int>& stops) {
+    if (dist <= tank) return 0;
+	int i = 0;
+	int num_stops = 0;
+	int current_stop = 0;
+	int dist_covered = 0;
+	bool flag = false;
+
+	stops.push_back(dist);
+
+	while (dist_covered < dist) {
+		while (i < stops.size() and stops[i] - current_stop <= tank) {
+			i++;
+			flag = true;
+		}
+		if (flag) {
+			if (i == stops.size()) break;
+			current_stop = stops[i - 1];
+			dist_covered = current_stop;
+			num_stops += 1;
+		} else {
+			return -1;
+		}
+		flag = false;
+	}
+	return num_stops;
 }
 
 
