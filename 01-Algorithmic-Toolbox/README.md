@@ -11,6 +11,7 @@
 - Greatest common divisor: Section 1.2.3 of [DPV08], Section 31.2 of [CLRS<sup>2</sup>]
 - Big-𝑂 notation and growth rate: Section 0.3 of [DPV08]
 - [**Big-𝑂 notation**](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation) at Khan Academy
+- [**An elementary introduction to binary search**](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search) at Khan Academy
 
 <sup>1</sup> [DPV] Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani. Algorithms (1st Edition). McGraw-Hill Higher Education. 2008.
 
