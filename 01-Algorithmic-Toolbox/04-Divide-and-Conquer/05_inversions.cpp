@@ -52,5 +52,5 @@ int main() {
     std::cin >> a[i];
   }
   vector<int> b(a.size());
-  std::cout << merge_sort(a, b, 0, a.size()) << '\n';
+  std::cout << merge_sort(a, b, 0, a.size()-1) << '\n';
 }
