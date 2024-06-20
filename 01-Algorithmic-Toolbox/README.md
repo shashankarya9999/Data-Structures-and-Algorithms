@@ -7,8 +7,7 @@
 - [**Comparison based sorting algorithms**](http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html) by David Galles 
 - [**sorting-algorithms.com**](http://www.sorting-algorithms.com/)
 
-
-2) **Readings**: 
+2) **Readings & Lectures**: 
 - Computing Fibonacci numbers: Section 0.2 of [DPV08<sup>1</sup>]
 - Properties of Fibonacci numbers: Exercises 0.2-0.4 in [DPV08]
 - [**An elementary introduction to greatest common divisor**](https://www.khanacademy.org/math/pre-algebra/factors-multiples/greatest_common_divisor/v/greatest-common-divisor-factor-exercise) at Khan Academy
@@ -19,9 +18,15 @@
 - Polynomial multiplication: Section 2.1 of [DPV08]
 - Master Theorem: Section 2.2 of [DPV08]
 - Merge sort and lower bound for comparison based sorting: Section 2.3 of [DPV08]
+- Quick sort: Chapter 7 of [CLRS]
+- [**An elementary introduction to quick sort**](https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/overview-of-quicksort) at Khan Academy
 
 3) **Note**:
 - Although the numbers in an array may be bounded by a number, Count Sort is not applicable to an array of real numbers, because it can only be applied to integer numbers: real numbers cannot play the role of indices of an array.
+
+- What is the amount of additional memory that regular Quick Sort uses (besides the array being sorted) in the worst case? <br>
+
+    In the worst case, the array is always divided into a part of size 1 and a part with all the other elements, and the recursion depth in this case will be 𝑂(𝑛). Recursion needs 𝑂(1) additional memory for each call, so in the worst case Quick Sort will use 𝑂(𝑛) additional memory. However, by using tail recursion elimination we can make Quick Sort use no more than 𝑂(log𝑛) additional memory.
 
 <sup>1</sup> [DPV] Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani. Algorithms (1st Edition). McGraw-Hill Higher Education. 2008.
 
