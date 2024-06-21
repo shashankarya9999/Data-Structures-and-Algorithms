@@ -2,3 +2,6 @@
 **/.js
 **/.json
 *.out
+*.png
+*.jpeg
+*.jpg

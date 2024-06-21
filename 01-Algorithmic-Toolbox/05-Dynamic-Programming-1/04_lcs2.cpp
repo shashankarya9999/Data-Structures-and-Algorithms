@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
+#include<algorithm>
 
 using std::vector;
+using std::min;
 
-int lcs2(vector<int> &a, vector<int> &b) {
+int lcs2(vector<int> &a, vector<int> &b, vector<int> &c) {
   //write your code here
-  return std::min(std::min(a.size(), b.size()), c.size());
+  
 }
 
 int main() {
