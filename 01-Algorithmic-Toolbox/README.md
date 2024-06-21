@@ -33,12 +33,10 @@
 - Although the numbers in an array may be bounded by a number, Count Sort is not applicable to an array of real numbers, because it can only be applied to integer numbers: real numbers cannot play the role of indices of an array.
 
 - What is the amount of additional memory that regular Quick Sort uses (besides the array being sorted) in the worst case? <br>
-
     In the worst case, the array is always divided into a part of size 1 and a part with all the other elements, and the recursion depth in this case will be 𝑂(𝑛). Recursion needs 𝑂(1) additional memory for each call, so in the worst case Quick Sort will use 𝑂(𝑛) additional memory. However, by using tail recursion elimination we can make Quick Sort use no more than 𝑂(log𝑛) additional memory.
 
 - What is the running time of the dynamic programming algorithm to change 
 𝑚 using 𝑛 different coin denominations? <br>
-
     For each value up to $m$, we need to try to start changingit with each of $n$ coin denominations, thus the running time is $O(nm)$
 
 - Hirschber's algorithm allows to compute an optimal alignment (but not just its score!) of two strings of length 𝑛 and 𝑚 in quadratic time 𝑂(𝑛𝑚) and a linear space 𝑂(𝑚+𝑛) only.
