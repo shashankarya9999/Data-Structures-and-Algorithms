@@ -37,9 +37,15 @@
 
 - What is the running time of the dynamic programming algorithm to change 
 𝑚 using 𝑛 different coin denominations? <br>
-    For each value up to $m$, we need to try to start changingit with each of $n$ coin denominations, thus the running time is $O(nm)$
+    For each value up to $m$, we need to try to start changing it with each of $n$ coin denominations, thus the running time is $O(nm)$
 
 - Hirschber's algorithm allows to compute an optimal alignment (but not just its score!) of two strings of length 𝑛 and 𝑚 in quadratic time 𝑂(𝑛𝑚) and a linear space 𝑂(𝑚+𝑛) only.
+
+4) **Professors**:
+- [**Daniel Kane**](https://cseweb.ucsd.edu/~dakane/)
+- [**Alexander S. Kulikov**](http://logic.pdmi.ras.ru/~kulikov/en)
+- [**Michael Levin**](https://www.linkedin.com/in/michael-levin-5625aa58)
+- [**Neil Rhodes**](http://cseweb.ucsd.edu/~nrhodes/) 
 
 <sup>1</sup> [DPV] Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani. Algorithms (1st Edition). McGraw-Hill Higher Education. 2008.
 

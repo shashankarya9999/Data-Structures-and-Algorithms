@@ -9,7 +9,6 @@ using std::cout;
 // this solution is quite slow(time limit exceeds)
 // our algorithm goes through all possible pairs of input numbers
 // need for better algorithm
-
 long long int max_pairwise_product(const vector<int> &numbers)
 {
     long long int result = 0;
