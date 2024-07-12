@@ -40,6 +40,5 @@ int main() {
     }
 
     // Printing answer, write your code here
-
     return 0;
 }
